@@ -7,8 +7,11 @@ You need the following to run DisplateChecker:
 - Google Chrome, if you don't have it already (https://www.google.com/intl/en_uk/chrome/)
 - Chromedriver (https://chromedriver.chromium.org/)
 
-Copy any artwork files you want to test for Displate entries into the "Test Images" folder. 
-They don't have to be high resolution; ordinary web preview size is fine.
+Place chromedriver.exe in the DisplateChecker folder. The application will not run without it.
 
-Open searchterms.txt, and enter the terms you want to search Displate for. 
-For example, if your artwork contains art of Tifa, Aerith and Mai Shiranui, put those into the text file (one entry per line).
+Copy any artwork files you want to test for Displate entries into the "Test Images" folder. They don't have to be high resolution; ordinary web preview size is fine.
+
+Open searchterms.txt, and enter the terms you want to search Displate for. For example, if your artwork contains art of Tifa, Aerith and Mai Shiranui, put those into the text file (one entry per line).
+
+This application makes use of Selenium, which will open up a Chrome browser window on its own and automate browsing Displate when you press the "Retrieve Art from Displate" button.
+Don't minimise, resize, or close the window; you can still do other things while it's working, or keep other windows on top of it. It will close itself once it's finished.
